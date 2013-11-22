@@ -3,3 +3,9 @@ LICENSE.txt
 README.txt
 demos/
 extras/documentation
+.buildpath
+.project
+.settings
+/vendor/*
+composer.phar
+composer.lock

@@ -1,0 +1,31 @@
+<h2>How it works</h2>
+<p>
+    The index.php file provided with this project is based on the implementation
+    seen in the Zend Framework 2 Skeleton project.  Just like the skeleton implementation,
+    the index file bootstraps Composer; however, it loads Zend_Application instead of
+    Zend\Mvc\Application.
+</p>
+<p>
+    From there, the ZF1 Bootstrap class initializes Zend\Mvc\Application and
+    instantiates two helpers&#8212;one controller action, and one view helper.
+    This makes ZF2 view helpers accessible in ZF1 views, and makes the ZF2 service
+    manager, event manager, and any components available to ZF1 controllers.
+</p>
+
+<h2>Examples</h2>
+<p>
+    In IndexController on the ZF1 side, two examples are provided.  In the
+    first example, the event manager is fetched and a list of events displayed.
+    In the second example, a ZF1 action is routed to ZF2.  This may be helpful
+    when transitioning individual controller actions from ZF1 to ZF2.
+</p>
+
+<h3>Example #1 - Access ZF2 components from ZF1</h3>
+<ul>
+<?php foreach ($this->events as $event): ?>
+    <li><?php echo $this->zf2()->escapeHtml($event); ?></li>
+<?php endforeach; ?>
+</ul>
+
+<h3>Example #2 - Route to ZF2 from ZF1</h3>
+<a href="/index/zf2">View example</a>

@@ -1,0 +1,26 @@
+{
+    "name": "webjawns/zf1-zf2-bridge",
+    "description": "Makes migration to ZF2 simpler by allowing use of ZF2 components within ZF1 and routing from ZF1 to ZF2 without .htaccess changes",
+    "type": "library",
+    "keywords": [
+        "zf2"
+    ],
+    "homepage": "https://webjawns.com",
+    "authors": [
+        {
+            "name": "Chris Strosser",
+            "email": "chris@webjawns.com",
+            "homepage": "http://webjawns.com"
+        }
+    ],
+	"require" : {
+		"zendframework/zendframework1" : "1.*",
+		"zendframework/zendframework" : "2.*"
+	},
+	"repositories" : [
+        {
+			"type" : "composer",
+			"url" : "https://packages.zendframework.com/"
+		}
+	]
+}

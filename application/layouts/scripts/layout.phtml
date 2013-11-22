@@ -1,0 +1,24 @@
+<?php echo $this->zf2()->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->zf2()->headTitle($this->translate('ZF1-to-ZF2 Bridge') . ' | webjawns.com')->setSeparator(' - ')->setAutoEscape(false); ?>
+
+        <?php echo $this->zf2()->headMeta()
+            ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+            ->appendHttpEquiv('X-UA-Compatible', 'IE=edge');
+        ?>
+    </head>
+    <body>
+        <h1><a href="<?php echo $this->zf2()->url('home'); ?>"><?php echo $this->zf2()->translate('ZF1-to-ZF2 Bridge'); ?></a></h1>
+
+        <main>
+            <?php echo $this->layout()->content; ?>
+        </main>
+
+        <footer>
+            <p>&copy; <?php echo date('Y'); ?> by <a href="http://webjawns.com">webjawns.com</a>. <?php echo $this->zf2()->translate('All rights reserved.'); ?></p>
+        </footer>
+    </body>
+</html>
